@@ -1,7 +1,7 @@
 USE mellszobrok;
 
 -- 2. feladat
-INSERT INTO alkotok (id, nev, nem, szulEv, szulHely) VALUES (9999,'Nagy Ferec','F', 1945, 'Tatabánya');
+INSERT INTO alkotok (id, nev, nem, szulEv, szulHely) VALUES (9999,'Molnar Ferec','F', 1945, 'Tatabánya');
 
 -- 3. feladat
 UPDATE alkotok SET nev = 'Nagy Ferenc' WHERE id = 9999;
@@ -23,7 +23,7 @@ ORDER BY darabszam DESC
 LIMIT 5;
 
 -- 7. feladat
-SELECT szobrok.hely, szobrok.szemely, EXTRACT(YEAR FROM CURRENT_DATE) - szobrok.avatas FROM szobrok
+SELECT szobrok.hely, szobrok.szemely, szobrok.avatas - alkotok.szulEv AS Életkor FROM szobrok
 INNER JOIN kapcsolatok ON szobrok.id = kapcsolatok.szoborId
 INNER JOIN alkotok ON kapcsolatok.alkotoId = alkotok.id
 WHERE nev LIKE 'Medgyessy Ferenc';
@@ -34,15 +34,13 @@ WHERE (alkotok.szulEv IS NULL AND alkotok.szulHely IS NOT NULL) OR (alkotok.szul
 
 -- 9. feladat
 SELECT szobrok.szemely, szobrok.avatas FROM szobrok
-WHERE hely LIKE 'Budapest'
-AND avatas = YEAR(rogzites);
+WHERE hely LIKE 'Budapest' AND avatas = YEAR(rogzites);
 
 -- 10. feladat
 SELECT DISTINCT alkotok.nev, alkotok.szulhely 
 FROM alkotok
 INNER JOIN szobrok ON alkotok.szulhely = szobrok.hely
 WHERE alkotok.szulev BETWEEN 1901 AND 1950
-AND szobrok.hely IS NOT NULL
 AND szobrok.hely != 'Budapest';
 
 -- 11. feladat
@@ -51,9 +49,11 @@ FROM szobrok
 WHERE szemely IN ('Erkel Ferenc', 'Liszt Ferenc');
 
 -- 12. feladat
-SELECT alkotok.nev, szobrok.avatas, szobrok.szemely
+SELECT alkotok.nev, COUNT(*) AS darabszam
 FROM szobrok
-INNER JOIN kapcsolatok ON szoborId = kapcsolatok.alkotoId
-INNER JOIN alkotok ON alkotoId = alkotok.id
-GROUP BY nev
-ORDER BY avatas ASC;
+INNER JOIN kapcsolatok ON szobrok.id = kapcsolatok.szoborId
+INNER JOIN alkotok ON kapcsolatok.alkotoId = alkotok.id
+WHERE szobrok.hely = 'Debrecen'
+GROUP BY alkotok.nev
+ORDER BY darabszam DESC
+LIMIT 3;

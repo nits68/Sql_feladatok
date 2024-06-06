@@ -46,23 +46,23 @@ Gyűjtésükből a mellszobrok és alkotóik néhány adatával foglalkozik a fe
 Feladatok megoldása előtt futtassa a `mellszobrok.sql` fájlt!
 
 ## 2. feladat
-Jegyezze be az alkotók táblába az `9999`.-ik helyre `Molnár Ferenc`-et, aki `1945`-ben `Tatabányán` született férfi alkotó volt.
+Jegyezze be az alkotók táblába 9999-es azonosítóval `Molnár Ferenc`-et, aki `1945`-ben `Tatabányán` született férfi alkotó volt.
 
 ## 3. feladat
-A 9999. azonosítójú alkotó neve az előző feladatban rosszul lett megadva. Javítsa ki `Nagy Ferenc`-re a nevét.
+A 9999-es azonosítójú alkotó neve az előző feladatban rosszul lett megadva. Javítsa ki `Nagy Ferenc`-re a nevét.
 
 ## 4. feladat
-A 9999. azonosítójú alkotó egy szélhámos volt. Törölje ki az alkotók táblából!
+A 9999-es azonosítójú alkotó egy szélhámos volt. Törölje ki az alkotók táblából!
 
 ## 5. feladat 
 Kisfaludi Strobl Zsigmond alkotta a Budapesten, 1963-ban avatott egyetlen Csajkovszkijt
 ábrázoló mellszobrot. Jegyezze be ezt a tényt a kapcsolat táblába! A feladat megoldásához
-nem szükséges lekérdezést készítenie.
+készítsen al-lekérdezéseket!
 
 ## 6. feladat 
 Készítsen lekérdezést, amely megadja azt az 5 személyt, akiket a legtöbb szobor ábrázol!
 Jelenítse meg a megformált személy nevét és a darabszámot, a darabszám szerint csökkenő
-sorrendben!
+sorrendben! Feltételezheti, hogy az 5. és a 6. helyen nem alakult ki holtverseny.
 
 ![6](assets/f6.png)
 
