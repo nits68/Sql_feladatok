@@ -61,8 +61,7 @@ A 2. feladatban lévő meccs lejátszása után adtak mégegy pontot a magyar v�
 Módosítsa a lőtt gólok számát 1-re!
 
 ## 4. feladat
-Az adatbázis nem szükséges focimeccseket is tartalmaz.
-Törölje az adatbázisból a döntetlen mérkőzéseket!
+Törölje a 910-es azonosítójú mérközést az adatbázisból!
 
 ## 5. feladat
 A legrangosabb mérkőzések a VB, azaz a világbajnoksággal kapcsolatos meccsek.
@@ -102,10 +101,7 @@ legyőzött a magyar válogatott! Minden érintett ellenfél neve egyszer jelenj
 
 ## 10. feladat
 Készítsen lekérdezést, amely kilistázza a magyar válogatott Bicskei Bertalan irányítása mellett
-játszott mérkőzéseit! A mérkőzéseket évenként csoportosítva jelenítse
-meg, szövegszerű tartalmát tekintve
-pedig az alábbi minta legyen a meghatározó! Biztosítsa, hogy minden
-érték látható legyen!
+játszott mérkőzéseit! A megjelenő oszlopokat a minta szerint jelenítse meg!
 
 ![10. feladat](10feladat.png)
 

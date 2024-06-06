@@ -6,11 +6,11 @@ INSERT INTO merkozesek VALUE
 
 -- 3. feladat:
 UPDATE merkozesek SET lott = 1
-WHERE id = 909;
+WHERE id = 910;
 
 -- 4. feladat:
 DELETE FROM merkozesek WHERE
-lott=kapott;
+WHERE id = 910;
 
 -- 5. feladat:
 SELECT id, datum, varos, stadion, nezoszam, ellenfel, lott, kapott, tetmeccs
@@ -22,26 +22,46 @@ SELECT nev
 FROM kapitanyok
   INNER JOIN  megbizasok
     ON kapitanyok.id = megbizasok.kapitanyid
-WHERE megbizasok.elso<500 AND megbizasok.utolso>500;
+WHERE megbizasok.elso<=500 AND megbizasok.utolso>=500;
 
 -- 7. feladat:
-SELECT datum, ellenfel, MAX(nezoszam)
+SELECT datum, ellenfel, nezoszam
 FROM merkozesek
-WHERE datum>'2001-01-01';
+WHERE datum > '2001-01-01' AND tetmeccs IS NOT NULL
+ORDER BY nezoszam DESC
+Limit 1;
+
+SELECT datum, ellenfel, nezoszam 
+FROM merkozesek
+WHERE Year(datum)>=2001 AND tetmeccs Is NOT NULL  AND nezoszam = 
+  (SELECT MAX(nezoszam)  FROM merkozesek 
+ WHERE Year(datum)>=2001 AND tetmeccs Is NOT NULL);
 
 -- 8. feladat:
 SELECT datum, varos, lott, kapott
 FROM merkozesek
-WHERE ellenfel LIKE 'Ausztria' AND (lott-kapott)>=5 OR (kapott-lott)>=5;
+WHERE ellenfel LIKE 'Ausztria' AND ABS(lott-kapott)>=5;
 
 -- 9. feladat:
-SELECT ellenfel
+SELECT DISTINCT
+  ellenfel
 FROM merkozesek
-WHERE lott>kapott;
+WHERE ellenfel NOT IN (SELECT
+    ellenfel
+  FROM merkozesek
+  WHERE lott <= kapott);
 
 -- 10. feladat:
-SELECT datum, ellenfel, lott, kapott, kapitanyid
-FROM merkozesek
-  INNER JOIN megbizasok
-  ON kapitanyid=3
-WHERE datum <= elso AND datum >= utolso;
+SELECT
+  merkozesek.id,
+  merkozesek.datum,
+  merkozesek.ellenfel,
+  merkozesek.lott,
+  merkozesek.kapott
+FROM kapitanyok
+  INNER JOIN  megbizasok
+    ON kapitanyok.id = megbizasok.kapitanyid, merkozesek
+WHERE merkozesek.id BETWEEN megbizasok.elso AND megbizasok.utolso
+    AND megbizasok.kapitanyid = kapitanyok.id
+    AND kapitanyok.nev = "Bicskei Bertalan";
+

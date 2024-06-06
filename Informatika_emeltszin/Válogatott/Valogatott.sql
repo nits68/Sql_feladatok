@@ -29,9 +29,12 @@ CREATE TABLE kapitanyok (
 
 CREATE TABLE megbizasok (
   id int(11) PRIMARY KEY,
-  kapitanyid int(11) REFERENCES kapitanyok (id),
+  kapitanyid int(11),
   elso int(11),
-  utolso int(11)
+  utolso int(11),
+  FOREIGN KEY (kapitanyid) REFERENCES kapitanyok (id),
+  FOREIGN KEY (elso) REFERENCES merkozesek (id),
+  FOREIGN KEY (utolso) REFERENCES merkozesek (id)
 );
 
 INSERT INTO merkozesek (id, datum, ido, varos, stadion, nezoszam, ellenfel, lott, kapott, tetmeccs)
@@ -1007,7 +1010,7 @@ INSERT INTO megbizasok (id, kapitanyid, elso, utolso)
   VALUES
   (1, 18, 1, 4),
   (2, 45, 5, 8),
-  (3, 21, 9, 10),
+    (3, 21, 9, 10),
   (4, 45, 11, 17),
   (5, 37, 18, 30),
   (6, 23, 31, 52),
@@ -1052,7 +1055,7 @@ INSERT INTO megbizasok (id, kapitanyid, elso, utolso)
   (45, 36, 577, 606),
   (46, 30, 607, 609),
   (47, 53, 610, 613),
-  (48, 16, 614, 618),
+   (48, 16, 614, 618),
   (49, 1, 619, 624),
   (50, 36, 625, 629),
   (51, 3, 630, 638),
@@ -1072,5 +1075,4 @@ INSERT INTO megbizasok (id, kapitanyid, elso, utolso)
   (65, 11, 850, 883),
   (66, 7, 884, 884),
   (67, 41, 885, 889),
-  (68, 9, 890, 896),
-  (69, 46, 897, 912);
+  (68, 9, 890, 896);
