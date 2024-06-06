@@ -60,6 +60,7 @@
 ## `3.Feladat`:
 
 ### A személyek adattáblában elírtak egy nevet. Módosítsa a 75-ös azonosítójú Nagy Tímea nevét Kiss Tímeára. (**3.feladat**)
+### Minta ide nem kell!!!
 ![3. feladat megoldása:](<képek/3.feladat(tábla).PNG>)
 </br>
 </br>
@@ -67,6 +68,8 @@
 ## `4.Feladat`:
 
 ### A dokumentumok táblában történt egy tévedés, és a rendszerbe valamilyen módon bekerült a 25-ös id-val rendelkező sport szakterületű dokumentum. Keresse meg és törölje ki az adattáblából. (**4.feladat**)
+### Minta ide nem kell!!!
+### Teljesen más van a megodásoknál !!!
 ![4. feladat megoldása:](<képek/4.feladat(tábla).PNG>)
 </br>
 </br>
@@ -88,6 +91,9 @@
 ## `7.Feladat`:
 
 ### Készítsen lekérdezést, amely megadja az angolról magyarra fordítandó(50-es nyelvId-val rendelkező) dokumentumok terjedelmét és szakterületét! A lista terjedelem szerint csökkenően jelenjen meg! (**7.feladat**)
+
+### Itt az 50-es id-t nem szabadott volna megadni, le kellett volna kérdezni!!!!
+
 ![7. feladat megoldása:](<képek/7.feladat(tábla).PNG>)
 </br>
 </br>
@@ -107,6 +113,8 @@
 </br>
 
 ## `10.Feladat`:
+
+### Ez egy jelentéses feladat volt, amit nem sikerült lekérdezéses feladatra alakítani!!!!
 
 ### Készítsen lekérdezést, amely kilistázza szakterületenként, hogy melyik nyelvről melyikre kell fordítani a megrendelt dokumentumokat. A listát szakterületenként csoportosítsa és azon belül minden nyelvpár egyszer jelenjen meg a forrásnyelv szerint ábécé-rendben! A lekérdezés elkészítésekor a mintából a mezők sorrendjét, a címet és a mezőnevek megjelenítését vegye figyelembe! A lekérdezés formázásában a mintától eltérhet. (**10.feladat**)
 ![10. feladat megoldása:](<képek/11.feladat(tábla).PNG>)

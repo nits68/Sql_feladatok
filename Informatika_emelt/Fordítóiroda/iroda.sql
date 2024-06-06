@@ -562,6 +562,8 @@ INSERT INTO szemelyek(id, nev, elerheto) VALUES
   ( 75,"Nagy Tímea",0),
   ( 76,"Tanács Lilla",1);
 
+-- Idegenkulcs definíciókat a táblák létrehozásához kértem!
+-- Helyes létrehozási és feltöltési sorrend: szemelyek, neylevek, dokumentumok, forditok
 
 ALTER TABLE `forditok` ADD CONSTRAINT `fordito_81`   FOREIGN KEY (`szemelyId`)     REFERENCES `szemelyek` (`id`);
 ALTER TABLE `dokumentumok` ADD CONSTRAINT `doku_91`   FOREIGN KEY (`nyelvId`)     REFERENCES `nyelvek` (`id`);
