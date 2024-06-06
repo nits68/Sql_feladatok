@@ -95,7 +95,7 @@ voltak, azaz hány napig tartottak!
 
 Készítsen lekérdezést, amelyik megadja, hogy a több űrrepülésen részt vevő űrhajósok hány
 éves korukban kezdték az első és hány éves korukban az utolsó küldetésüket! Jelenítse meg
-az űrhajós nevét, és a két életkort!
+az űrhajós nevét, és a két életkort! A megjelenő adatsorok az űrhajós neve szerint ábécé rendben legyenek!
 
 ![7. feladat](Images/7.feladat.png)
 
@@ -110,8 +110,7 @@ az űrhajósok száma szerint csökkenő sorrendben jelenítse meg!
 ## 9. feladat
 
 
-Határozza meg, hogy hány ország képviseletében repültek az űrhajósok! Ehhez egészítse ki
-az alábbi lekérdezést, úgy, hogy válaszoljon az előbbi kérdésre! A teljes lekérdezést mentse!
+Határozza meg, hogy hány ország képviseletében repültek az űrhajósok!
 
 ![9. feladat](Images/9.feladat.png)
 
@@ -123,6 +122,9 @@ legénység tagjai között férfi és nő is volt!
 ![10. feladat](Images/10.feladat.png)
 
 ## 11. feladat
+
+NL: 1000x kértem, hogy ne legyen JELENTÉS!
+
 
 Készítsen lekérdezést arról, hogy a 20. század utolsó évtizedében (1991-2000) megkezdett
 küldetéseken milyen legénység vett részt! A listában a küldetés neve és kezdete kiemelve,
