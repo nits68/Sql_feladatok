@@ -38,7 +38,7 @@ Gyűjtésükből a mellszobrok és alkotóik néhány adatával foglalkozik a fe
 | szulev | int | Az alkotó születési éve ||
 | szulhely | varchar | Az alkotó születési helye ||
 
-![Kép a kapcsolatokról](diagram.PNG)
+![Kép a kapcsolatokról](assets/diagram.PNG)
 
 # Feladatok:
 ---
@@ -64,7 +64,7 @@ Készítsen lekérdezést, amely megadja azt az 5 személyt, akiket a legtöbb s
 Jelenítse meg a megformált személy nevét és a darabszámot, a darabszám szerint csökkenő
 sorrendben!
 
-![6](https://github.com/GerencserOliver/AdatbazisProject/assets/98750706/bc896436-a8f4-4353-a0e5-58f045c2ce5f)
+![6](assets/f6.png)
 
 
 ## 7. feladat 
@@ -72,19 +72,19 @@ Medgyessy Ferenc kétszeres Kossuth-díjas szobrász. Készítsen lekérdezést,
 megadja, hogy mellszobrai hol állnak, kit ábrázolnak és az alkotó hány éves korában avatták
 fel azokat!
 
-![7](https://github.com/GerencserOliver/AdatbazisProject/assets/98750706/b79cb441-5afa-4af6-a6eb-5f0079c7e665)
+![7](assets/f7.png)
 
 ## 8. feladat 
 Készítsen lekérdezést, amely megadja azon adatbázisban szereplő alkotók nevét, akiknek
 a születési évük és születési helyük közül csak az egyik ismert!
 
-![8](https://github.com/GerencserOliver/AdatbazisProject/assets/98750706/b596a8af-51cd-405e-90d3-1586b7d28a19)
+![8](assets/f8.png)
 
 ## 9. feladat 
 Készítsen lekérdezést, amely megadja, hogy mely budapesti szobrok adatai kerültek
 az adatbázisba az avatás évében! Az ábrázolt személy nevét és az avatás évét adja meg!
 
-![9](https://github.com/GerencserOliver/AdatbazisProject/assets/98750706/6529dbbd-8943-4081-a182-aa0585ff78fa)
+![9](assets/f9.png)
 
 ## 10. feladat 
 Készítsen lekérdezést, amely megadja, hogy kik azok a múlt század első felében (1901 és
@@ -92,18 +92,18 @@ Készítsen lekérdezést, amely megadja, hogy kik azok a múlt század első fe
 készített szobor! Az alkotó neve és születési helye jelenjen meg, de mindenki csak egyszer!
 A budapesti alkotásokat ne vegye figyelembe!
 
-![10](https://github.com/GerencserOliver/AdatbazisProject/assets/98750706/483b3d64-891c-401e-aa81-64f287eb5319)
+![10](assets/f10.png)
 
 ## 11. feladat 
 Mely településeken kapott mellszobrot „Erkel Ferenc” és „Liszt Ferenc” is?
 
-![image](https://github.com/GerencserOliver/AdatbazisProject/assets/98750706/d3a59648-4433-4920-918e-178b85fff518)
+![image](assets/f11.png)
 
 ## 12. feladat 
 Készítsen lekérdezést a debreceni mellszobor alkotókról, melyben megszámolja, hogy egyes alkótók mennyi szobrot csináltak és ez alapján csökkenő sorrendbe rendezi őket.
 3-nél több eredmény ne jelenjen meg.
 
-![image](https://github.com/GerencserOliver/AdatbazisProject/assets/98750706/a1c4bfcd-0b58-479b-83d7-0bd8195e6370)
+![image](assets/f12.png)
 
 ---
 
