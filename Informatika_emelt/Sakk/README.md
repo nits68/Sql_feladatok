@@ -45,6 +45,8 @@ __ranglisták__ (*id, datum*)
 
 ![](/képek/tábla.png)
 
+### Képek beszúrása nem működik sehol!!!!
+
 
 Feltételezheti, hogy az állományban nem lesznek a megoldást zavaró tényezők.
 
@@ -57,8 +59,10 @@ Feltételezheti, hogy az állományban nem lesznek a megoldást zavaró tényez�
 >- Anish Giri egy férfi aki 1994. 06. 28-án született RUS, Saint Petersburg-ban.
 
 3. A sakk olimpia egyik résztvevője hibát talált a vele kapcsolatban lévő információk között. Ezt jelentette is szakszervezetének és a munkaelosztó téged bízott meg a hiba javításával. A hiba jelentője a sakkozók táblában Balogh Csaba néven található. Forrásunk szerint nem az általunk bevitt időben született hanem 1987. 03. 11-án.
+### Mi van akkor, ha több Balogh Csaba sakkozó van az adatbázisban?
 
 4. Egy impostort találtak a ranglisták között. Az 52-es azonosítójú sornak nem kéne ott lenni. Pusztítsd el.
+### Felszólító mondat végén felkiáltójel!
 
 5. Készítsen SQL parnacsot, amely megadja azokat a sakkozókat, akiknek nincs feltüntetve a szülővárosa! A sakkozó születési országának kódja és születési neve jelenjen meg ország, azon belül név szerinti ábécérendben!
 
@@ -79,6 +83,7 @@ Feltételezheti, hogy az állományban nem lesznek a megoldást zavaró tényez�
 
 
 8. Készítsen SQL parancsot, amely a magyar színekben versenyzők adatait jeleníti meg! Az adatokat a versenyző neve szerint csoportosítva, a ranglista dátuma szerint rendezve jelenítse meg!
+9. ### GROUP BY szabályt nem vettétek figyelembe!
 
 
 ![](/képek/8.feladat.png)
@@ -91,6 +96,7 @@ Feltételezheti, hogy az állományban nem lesznek a megoldást zavaró tényez�
 
 
 10. Készítsen SQL parancsot, amely megadja, hogy melyik sakkozó hány évesen szerepelt először a legjobb 10 között az adatbázis ranglistáin! A születési nevet, az évszámok alapján meghatározott kort és az első szereplés dátumát jelenítse meg! A lista legyen kor szerint növekvően rendezett!
+### "első szereplés dátumát jelenítse" hiányzik a megoldásból!
 
 
 ![](/képek/10.feladat.png)
