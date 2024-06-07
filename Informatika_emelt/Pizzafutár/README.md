@@ -91,3 +91,10 @@ eltérhet. **(8osszeg)**
 
 Az eredeti feladat: [Pizzafutár.pdf](http://informatika.fazekas.hu/wp-content/uploads/2015/10/e_adatb_2018_id.pdf)
 <br>
+
+### Lekérdezések eredményi!!!!
+### Adatbázist létrehozó script hiányosságai (tartalmi, formai)!!!!
+### 5. feladatot nem szabad megoldani!!!
+### 9. feladat: nincs kiegészített rendelés!!!!
+### 10. feladat megoldása hibás!!!
+
