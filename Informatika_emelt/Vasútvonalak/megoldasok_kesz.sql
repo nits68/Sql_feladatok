@@ -24,6 +24,7 @@
     allomasok.id
   FROM allomasok
   WHERE allomasok.nev = 'Szeged-Feketehalom');
+
 -- 6. feladat:
     SELECT
       allomasok.orszag,
@@ -55,7 +56,7 @@
     GROUP BY helyek.vonalId
     ORDER BY helyek.tav;
 
-﻿-- 9. feladat:
+-- 9. feladat:
 
 SELECT
   v1.id, (SELECT

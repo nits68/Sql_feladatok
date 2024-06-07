@@ -13,7 +13,7 @@ Az adatbázis táblái és kapcsolatai az alábbiak.
 
 ## Adatbázis táblák:
 
-### allomas(id, nev, tipus, orszag, mukodo)
+### allomasok (id, nev, tipus, orszag, mukodo)
 | azonosító | típus       | leírás                                                                                       |
 |-----------|-------------|----------------------------------------------------------------------------------------------|
 | id        | int(11)     | Az állomás azonosítója (szám), elsődleges kulcs                                              |
@@ -22,14 +22,16 @@ Az adatbázis táblái és kapcsolatai az alábbiak.
 | orszag    | varchar(40) | Az állomás országa (szöveg)                                                                  |
 | mukodo    | tinyint(1)  | Az állomás működési állapota (logikai), ha működik, akkor értéke igaz                        |
 
-### vonal(id, kisvasut, mukodo)
+### Az orszak mező leírásából fontos információt hagytatok ki!!!!
+
+### vonalak (id, kisvasut, mukodo)
 | azonosító | típus       | leírás                                                                  |
 |-----------|-------------|-------------------------------------------------------------------------|
 | id        | varchar(40) | A vasútvonal azonosítója (szöveg), elsődleges kulcs                     |
 | kisvasut  | tinyint(1)  | A vasútvonal típusát mutatja (logikai), értéke igaz, ha kisvasúti       |
 | mukodo    | tinyint(1)  | A vasútvonal állapotát mutatja (logikai), értéke hamis, ha felszámolták |
 
-### hely (id, vonalid, allomasid, tav)
+### helyek (id, vonalid, allomasid, tav)
 | azonosító | típus       | leírás                                                                                                                                                         |
 |-----------|-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | id        | int(11)     | A vonal egy helyének azonosítója (szám), elsődleges kulcs                                                                                                      |
@@ -75,11 +77,15 @@ Az adatbázis táblái és kapcsolatai az alábbiak.
   állomástól mért távolság sorrendjében megjeleníti a működő állomások nevét, típusát és az 
   indulási állomástól mért távolságát!
 
+  ### A 80-as vonal feltétel kimaradt a megoldásból!!!!
+
   ![F7](F7_IMG.png)
 
 ## 8. feladat:
   Készítsen lekérdezést, amely megadja az egyes vonalak hosszát, azaz az első és az utolsó 
   hely távolságát! Jelenítse meg a vonal azonosítóját és a hossz értékét!
+
+  ### A feladat nem kér rendezést, de a megoldásban van!
 
   ![F8](F8_IMG.PNG)
 
