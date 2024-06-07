@@ -16,7 +16,7 @@ WHERE magyar = 'Még egy kört mindenkinek';
 SELECT ev, cim
 FROM filmek
 WHERE nyert IS TRUE
-ORDER BY ev ASC;
+ORDER BY ev;
 
 -- 6.feladat:
 SELECT ev
